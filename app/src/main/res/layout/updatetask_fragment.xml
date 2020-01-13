@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/addNoteTextInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editNoteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Edit Task"
+            android:imeOptions="actionDone"
+            android:inputType="textAutoCorrect"
+            android:singleLine="true" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/addDateTextInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:layout_constraintTop_toBottomOf="@id/addNoteTextInput">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editDateText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Edit From Date"
+            android:imeOptions="actionDone"
+            android:inputType="textAutoCorrect"
+            android:singleLine="true" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/addToDateTextInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:layout_constraintTop_toBottomOf="@id/addDateTextInput">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editToDateText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Edit To Date"
+            android:imeOptions="actionDone"
+            android:inputType="textAutoCorrect"
+            android:singleLine="true" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/taskByTextInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:layout_constraintTop_toBottomOf="@id/addToDateTextInput">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edittaskByText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Task By"
+            android:imeOptions="actionDone"
+            android:inputType="textAutoCorrect"
+            android:singleLine="true" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/button_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="Update"
+        android:textColorHighlight="@color/cardview_dark_background"
+        android:textColor="#454"
+        app:layout_constraintTop_toBottomOf="@id/taskByTextInput"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
